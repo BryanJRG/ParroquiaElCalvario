@@ -99,7 +99,7 @@ export default function Donations() {
                   Cada donación que recibimos es una bendición que nos permite continuar con nuestra misión de servir a Dios y a nuestra comunidad. Sus aportes nos ayudan a mantener nuestro templo, realizar actividades pastorales, y apoyar a quienes más lo necesitan.
                 </p>
                 <p className="font-lora-m text-lg text-gray-700 leading-relaxed">
-                  <strong className={`font-lora-b ${liturgicalColor}`}>Importante:</strong> Todos los donativos son dirigidos directamente a nuestra parroquia y son utilizados con responsabilidad y transparencia para el beneficio de toda la comunidad de fe.
+                  <strong className={`font-lora-b ${liturgicalColor}`}>Importante:</strong> Todos los donativos son dirigidos directamente a nuestra parroquia a pesar de ser la cuenta de la <strong>Parroquia Santa Lucía </strong> y son utilizados con responsabilidad y transparencia para el beneficio de toda la comunidad de fe.
                 </p>
               </div>
             </div>
@@ -108,11 +108,11 @@ export default function Donations() {
           
           {/* Columna derecha: Imagen - Desktop */}
           <div className="opacity-0 animate-fade-in-right delay-300 duration-800 lg:flex hidden">
-            <div className="relative group overflow-hidden rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.12)] border border-gray-200/80 w-full h-full min-h-[600px]">
+            <div className="relative group overflow-hidden rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.12)] border border-gray-200/80 w-full h-95 min-h-[600px]">
               <img 
                 src={VirgenConJesus} 
                 alt="Virgen con Jesús" 
-                className="w-full h-full object-cover object-[center_30%] transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-full object-cover object-[center_5%] transition-transform duration-700 group-hover:scale-102"
               />
               {/* Overlay sutil */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -244,27 +244,10 @@ export default function Donations() {
                 Será redirigido a nuestra plataforma segura de pagos <strong className="font-lora-b">WOMPI</strong> para completar su donación de manera rápida y segura.
               </p>
               <p className="font-lora-m text-base text-gray-600 italic">
-                Todos los donativos son destinados directamente a nuestra parroquia
+                Todos los donativos son destinados directamente a nuestra parroquia a pesar de ser de aparecer que es para la <strong>Parroquia Santa Lucía</strong>.
               </p>
             </div>
             
-            {/* Métodos de pago */}
-            <div className="mb-10 p-6 bg-white rounded-xl border border-gray-200">
-              <p className="font-cinzel-m text-center text-gray-700 mb-4">
-                Métodos de pago aceptados:
-              </p>
-              <div className="flex flex-wrap justify-center gap-4 items-center">
-                <div className="px-4 py-2 bg-gray-50 rounded-lg border border-gray-200">
-                  <span className="font-lora-m text-sm text-gray-700">Tarjetas de crédito</span>
-                </div>
-                <div className="px-4 py-2 bg-gray-50 rounded-lg border border-gray-200">
-                  <span className="font-lora-m text-sm text-gray-700">Tarjetas de débito</span>
-                </div>
-                <div className="px-4 py-2 bg-gray-50 rounded-lg border border-gray-200">
-                  <span className="font-lora-m text-sm text-gray-700">Transferencias</span>
-                </div>
-              </div>
-            </div>
             
             {/* Botón principal de donación */}
             <div className="text-center">
@@ -287,7 +270,7 @@ export default function Donations() {
                 <svg className="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
-                Transacción 100% segura y encriptada
+                Transacción 100% segura
               </p>
             </div>
             
@@ -319,7 +302,7 @@ export default function Donations() {
                 <h3 className={`font-cinzel-b text-2xl sm:text-3xl mb-6 ${liturgicalColor} drop-shadow-sm`}>
                   Gracias por su Generosidad
                 </h3>
-                <div className="w-20 h-[2px] bg-gradient-to-r from-gray-400 to-gray-200 mb-6 shadow-sm"></div>
+                <div className="w-full h-[2px] bg-gradient-to-r from-gray-400 to-gray-300 mb-6 shadow-sm"></div>
                 <p className="font-lora-m text-lg text-gray-700 leading-relaxed mb-6">
                   Cada donación, sin importar su monto, es una bendición para nuestra comunidad. Su apoyo nos permite continuar nuestra misión de servir a Dios y a nuestros hermanos.
                 </p>

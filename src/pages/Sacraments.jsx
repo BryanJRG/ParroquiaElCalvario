@@ -3,13 +3,14 @@ import Sidebar from '@/components/layout/Sidebar';
 import Navbar from '@/components/layout/Navbar';
 import JardinI from '@/assets/images/gallery/JardinCampana.jpg';
 import ParoquiaCielo from '@/assets/images/gallery/ParroquiaCielo.jpg';
-import VirgenConJesus from '@/assets/images/gallery/VirgenConJesus.jpg';
+import CampanaTardeIZoom from '@/assets/images/gallery/CampanaTardeIZoom.jpg';
+import CruzAFuera from '@/assets/images/gallery/CruzAFuera.jpg';
 import CristoNegro from '@/assets/images/gallery/CristoNegroI.jpg';
 import Jesus from '@/assets/images/gallery/JesusCrucificadoGrande.jpg';
 import useLiturgicalColor from '@/hooks/useLiturgicalColor';
 
 // Componente de Card de Sacramento
-const SacramentCard = ({ title, description, requirements, image, delay = '0', liturgicalColor }) => {
+const SacramentCard = ({ title, description, requirements, image, objectClass, delay = '0', liturgicalColor }) => {
   return (
     <div className={`group bg-gradient-to-br from-white to-gray-50/50 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-gray-200/80 overflow-hidden transition-all duration-700 ease-out hover:-translate-y-3 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:from-gray-50/50 hover:to-white opacity-0 animate-fade-scale-up delay-${delay}`}>
       
@@ -18,7 +19,7 @@ const SacramentCard = ({ title, description, requirements, image, delay = '0', l
         <img 
           src={image} 
           alt={title}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          className={`w-full h-full object-cover ${objectClass} transition-transform duration-700 group-hover:scale-110`}
         />
         <div className="absolute inset-0 bg-gradient-to-t  to-transparent"></div>
         
@@ -77,7 +78,8 @@ export default function Sacraments() {
         "Plática prebautismal para padres y padrinos",
         "Coordinar fecha con la oficina parroquial"
       ],
-      image: VirgenConJesus
+      image: CruzAFuera,
+      objectClass: "object-[center_21%]"
     },
     {
       title: "Confirmación",
@@ -89,7 +91,8 @@ export default function Sacraments() {
         "Elegir un padrino o madrina confirmado",
         "Carta de motivación personal"
       ],
-      image: CristoNegro
+      image: CristoNegro,
+      objectClass: "object-[center_17%]"
     },
     {
       title: "Primera Comunión",
@@ -125,7 +128,7 @@ export default function Sacraments() {
         "Solicitar fecha con mínimo 6 meses de anticipación",
         "Entrevista con el párroco"
       ],
-      image: CristoNegro
+      image: CampanaTardeIZoom
     }
   ];
   
@@ -231,6 +234,7 @@ export default function Sacraments() {
                 description={sacrament.description}
                 requirements={sacrament.requirements}
                 image={sacrament.image}
+                objectClass={sacrament.objectClass}
                 delay={((index % 3) * 100 + 200).toString()}
                 liturgicalColor={liturgicalColor}
               />

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Sidebar from '@/components/layout/Sidebar';
 import Navbar from '@/components/layout/Navbar';
-import VirgenConJesus from '@/assets/images/gallery/VirgenConJesus.jpg';
+import VirgenConJesus from '@/assets/images/gallery/Santisimo.jpg';
+import SantoI from '@/assets/images/gallery/SantoI.jpg';
+import SanJudasF from '@/assets/images/gallery/SanJudasF.jpg';
 import useLiturgicalColor from '@/hooks/useLiturgicalColor';
 
 // Componente de Card de Oración
@@ -119,7 +121,7 @@ export default function Prayers() {
             <div className="flex items-center justify-center">
               <div className="relative overflow-hidden rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.12)] border border-gray-200/80 w-full max-w-lg group">
                 <img 
-                  src={VirgenConJesus} 
+                  src={SantoI} 
                   alt="Oraciones" 
                   className="w-full h-[450px] md:h-[500px] object-cover object-[center_30%] transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]"
                 />
@@ -173,7 +175,7 @@ export default function Prayers() {
             <div className="flex items-center justify-center">
               <div className="relative overflow-hidden rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.12)] border border-gray-200/80 w-full max-w-lg group">
                 <img 
-                  src={VirgenConJesus} 
+                  src={SanJudasF} 
                   alt="Oraciones" 
                   className="w-full h-[450px] md:h-[500px] object-cover object-[center_30%] transition-transform duration-[1200ms] ease-out group-hover:scale-[1.02]"
                 />

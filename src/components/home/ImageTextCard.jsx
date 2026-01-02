@@ -44,7 +44,7 @@ const ImageTextCard = ({
         </h3>
         
         {/* Línea decorativa de separación más larga */}
-        <div className="w-full h-[2px] bg-gradient-to-r from-gray-400 to-gray-200 mb-6 shadow-sm transition-all duration-500 ease-out group-hover:w-[99%] group-hover:md:w-95"></div>
+        <div className="w-full h-[2px] bg-gradient-to-r from-gray-400 to-gray-300 mb-6 shadow-sm transition-all duration-500 ease-out group-hover:w-[99%]"></div>
         
         {/* Texto descriptivo - aumenta en hover */}
         <p className="font-lora-m text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed transition-all duration-500 ease-out group-hover:scale-[1.02] origin-left">

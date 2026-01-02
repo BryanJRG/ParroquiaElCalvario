@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Sidebar from '@/components/layout/Sidebar';
 import Navbar from '@/components/layout/Navbar';
-import ParoquiaCielo from '@/assets/images/gallery/ParroquiaCielo.jpg';
+import CampanaManiana from '@/assets/images/gallery/CampanaManiana.jpg';
 import useLiturgicalColor from '@/hooks/useLiturgicalColor';
 
 export default function History() {
@@ -41,7 +41,7 @@ export default function History() {
                   Nuestra Historia
                 </h1>
                 
-                <div className="w-full h-[2px] bg-gradient-to-r from-gray-400 to-gray-200 mb-8 shadow-sm"></div>
+                <div className="w-full h-[2px] bg-gradient-to-r from-gray-400 to-gray-300 mb-8 shadow-sm"></div>
                 
                 <div className="font-lora-m text-base sm:text-lg text-gray-700 leading-relaxed space-y-6 flex-1 overflow-y-auto">
                   
@@ -86,9 +86,9 @@ export default function History() {
             <div className="flex items-stretch">
               <div className="relative overflow-hidden rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.12)] border border-gray-200/80 w-full group">
                 <img 
-                  src={ParoquiaCielo} 
+                  src={CampanaManiana} 
                   alt="Parroquia El Calvario" 
-                  className="w-full h-full object-cover object-[center_40%] transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover object-[center_40%] transition-transform duration-700 group-hover:scale-101"
                 />
                 {/* Overlay sutil */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

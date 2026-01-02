@@ -5,7 +5,7 @@ import Sidebar from '@/components/layout/Sidebar';
 import Navbar from '@/components/layout/Navbar';
 import ParoquiaCielo from '@/assets/images/gallery/ParroquiaCielo.jpg';
 import ParoquiaCieloFull from '@/assets/images/gallery/ParroquiaDPlantas.jpg';
-import CristoNegro from '@/assets/images/gallery/CristoNegroI.jpg';
+import CristoNegroF from '@/assets/images/gallery/CristoNegroF.jpg';
 import CampanaManianaF from '@/assets/images/gallery/CampanaManianaF.jpg';
 import VirgenConJesus from '@/assets/images/gallery/VirgenConJesus.jpg';
 import useLiturgicalColor from '@/hooks/useLiturgicalColor';
@@ -22,7 +22,7 @@ const InfoCard = ({ icon, title, content, delay = '0', liturgicalColor }) => {
           <h3 className={`font-cinzel-m text-xl mb-3 ${liturgicalColor} drop-shadow-sm transition-all duration-500 ease-out group-hover:text-lg`}>
             {title}
           </h3>
-          <div className="w-16 h-[2px] bg-gradient-to-r from-gray-400 to-gray-200 mb-4 shadow-sm transition-all duration-500 ease-out group-hover:w-24"></div>
+          <div className="w-full h-[2px] bg-gradient-to-r from-gray-400 to-gray-300 mb-4 shadow-sm transition-all duration-500 ease-out "></div>
           <div className="font-lora-m text-base text-gray-700 leading-relaxed transition-all duration-500 ease-out group-hover:scale-[1.01] origin-top-left">
             {content}
           </div>
@@ -132,9 +132,9 @@ export default function Contact() {
              <div className="opacity-0 animate-fade-in-up delay-300 duration-800 flex items-center justify-center">
               <div className="relative group overflow-hidden rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-gray-200/80 w-full max-w-md">
                 <img 
-                  src={CristoNegro} 
+                  src={CristoNegroF} 
                   alt="Cristo Negro" 
-                  className="w-full h-[350px] md:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-[350px] md:h-[400px] object-fit transition-transform duration-700 group-hover:scale-102"
                 />
               </div>
             </div>
@@ -218,7 +218,7 @@ export default function Contact() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               }
-              title="Horario de Atención"
+              title="Horario de Atención de la Oficina Parroquial"
               content={
                 <div className="space-y-1">
                   <ScheduleItem day="Lunes - Viernes" hours="8:00 AM - 12:00 PM" liturgicalColor={liturgicalColor} />
@@ -264,15 +264,6 @@ export default function Contact() {
           </div>
         </div>
       </section>
-      
-      {/* Separador decorativo */}
-      <div className="py-12 bg-gradient-to-b from-white to-gray-50">
-        <div className="flex items-center justify-center">
-          <div className="h-[2px] w-32 bg-gradient-to-r from-transparent via-gray-300 to-transparent shadow-sm"></div>
-          <div className="mx-6 w-3 h-3 rounded-full bg-gray-400 shadow-md"></div>
-          <div className="h-[2px] w-32 bg-gradient-to-r from-transparent via-gray-300 to-transparent shadow-sm"></div>
-        </div>
-      </div>
       
       {/* Sección de Mapa */}
       <section className="relative bg-gradient-to-b from-gray-50 to-white py-16 px-4">
