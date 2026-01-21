@@ -1,16 +1,16 @@
-import { Home, ScrollText , MapPin, HandCoins , Phone, ChevronRight, BookOpenText, X } from 'lucide-react';
+import { Home, ScrollText, MapPin, HandCoins, Phone, ChevronRight, X } from 'lucide-react';
 import { PiHandsPraying } from "react-icons/pi";
+import { Link } from 'react-router-dom';
 import { animations } from '@/utils/animations';
-import { lazy } from 'react';
 
 const Sidebar = ({ isOpen, setIsOpen, liturgicalColor }) => {
   const navItems = [
-    { icon: Home, label: 'Inicio', href: '#inicio' },
-    { icon: Phone, label: 'Contacto', href: '#contacto' },
-    { icon: ScrollText, label: 'Sacramentos', href: '#sacramentos'},
-    { icon: PiHandsPraying, label: 'Oraciones', href: '#oraciones'},
-    { icon: MapPin, label: 'Ubicacion', href: '#comunidad' },
-    { icon: HandCoins , label: 'Donar', href: '#contacto' },
+    { icon: Home, label: 'Inicio', href: '/' },
+    { icon: Phone, label: 'Contacto', href: '/contacto' },
+    { icon: ScrollText, label: 'Sacramentos', href: '/sacramentos'},
+    { icon: PiHandsPraying, label: 'Oraciones', href: '/oraciones'},
+    { icon: MapPin, label: 'Ubicación', href: '/contacto#mapa' },
+    { icon: HandCoins, label: 'Donar', href: '/donar' },
   ];
   
   return (
@@ -46,15 +46,15 @@ const Sidebar = ({ isOpen, setIsOpen, liturgicalColor }) => {
                 const Icon = item.icon;
                 return (
                   <li key={index}>
-                    <a
-                      href={item.href}
+                    <Link
+                      to={item.href}
                       onClick={() => setIsOpen(false)}
-                      className={`flex items-center space-x-4 p-4 rounded-lg font-cormorant-m text-lg text-gray-800 hover:bg-gray-50 transition-all duration-300 group ${animations.hoverLift}`}
+                      className={`flex items-center space-x-4 p-5 rounded-lg font-cormorant-m text-lg text-gray-800 hover:bg-gray-50 transition-all duration-300 group ${animations.hoverLift} active:bg-gray-100`}
                     >
-                      <Icon className={`${liturgicalColor} transition-colors`} size={22} />
+                      <Icon className={`${liturgicalColor} transition-colors flex-shrink-0`} size={24} />
                       <span className="flex-1">{item.label}</span>
-                      <ChevronRight className="opacity-0 group-hover:opacity-100 transition-opacity" size={18} />
-                    </a>
+                      <ChevronRight className="opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" size={20} />
+                    </Link>
                   </li>
                 );
               })}

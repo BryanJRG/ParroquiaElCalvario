@@ -266,7 +266,7 @@ export default function Contact() {
       </section>
       
       {/* Sección de Mapa */}
-      <section className="relative bg-gradient-to-b from-gray-50 to-white py-16 px-4">
+      <section id='mapa' className="relative bg-gradient-to-b from-gray-50 to-white py-16 px-4">
         <div className="max-w-7xl mx-auto">
           
           {/* Título de sección */}

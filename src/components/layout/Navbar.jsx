@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { href, Link } from "react-router-dom";
-import Contact from "../../pages/Contact";
+import { Link } from "react-router-dom";
 import { Menu, X } from 'lucide-react';
 
 const Navbar = ({ isOpen, setIsOpen, liturgicalColor, noHero}) => {
@@ -22,8 +21,8 @@ const Navbar = ({ isOpen, setIsOpen, liturgicalColor, noHero}) => {
   const navItems = [
     { label: 'Inicio', href: '/' },
     { label: 'Contacto', href: '/contacto' },
-    { label: 'sacramentos', href: '/sacramentos'},
-    { label: 'oraciones', href: '/oraciones'},
+    { label: 'Sacramentos', href: '/sacramentos'},
+    { label: 'Oraciones', href: '/oraciones'},
     { label: 'Donar', href: '/donar' },
   ];
   
@@ -40,7 +39,8 @@ const Navbar = ({ isOpen, setIsOpen, liturgicalColor, noHero}) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo con animación y color dinámico */}
-          <div 
+          <Link
+            to="/"
             className={`font-cinzel-xb text-xl sm:text-2xl transition-colors duration-300 opacity-0 ${
               mounted ? 'animate-fade-scale-up' : ''
             } ${
@@ -49,14 +49,14 @@ const Navbar = ({ isOpen, setIsOpen, liturgicalColor, noHero}) => {
             }`}
           >
             Parroquia El Calvario
-          </div>
+          </Link>
           
           {/* Desktop Navigation con animaciones escalonadas */}
           <div className="hidden md:flex items-center space-x-8 uppercase">
             {navItems.map((item, index) => (
-              <a
+              <Link
                 key={index}
-                href={item.href}
+                to={item.href}
                 className={`font-cormorant-m text-base hover:opacity-70 transition-all duration-300 relative group opacity-0 ${
                   mounted ? 'animate-fade-scale-up' : ''
                 } ${
@@ -70,7 +70,7 @@ const Navbar = ({ isOpen, setIsOpen, liturgicalColor, noHero}) => {
               >
                 {item.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-current transition-all duration-300 group-hover:w-full"></span>
-              </a>
+              </Link>
             ))}
           </div>
           
