@@ -4,7 +4,7 @@ import Navbar from '@/components/layout/Navbar';
 import JardinI from '@/assets/images/gallery/JardinCampana.jpg';
 import ParoquiaCielo from '@/assets/images/gallery/ParroquiaCielo.jpg';
 import CampanaTardeIZoom from '@/assets/images/gallery/CampanaTardeIZoom.jpg';
-import CruzAFuera from '@/assets/images/gallery/CruzAFuera.jpg';
+import CruzAFuera from '@/assets/images/gallery/CruzAfuera.jpg';
 import CristoNegro from '@/assets/images/gallery/CristoNegroI.jpg';
 import Jesus from '@/assets/images/gallery/JesusCrucificadoGrande.jpg';
 import JardinL from '@/assets/images/gallery/JardinI.jpg';
