@@ -54,7 +54,7 @@ export default function Home() {
         liturgicalColor={liturgicalColor}
       />
       
-      {/* Imagen de fondo fija - fuera del hero para que sea visible */}
+      {/* Imagen de fondo fija */}
       <div 
         className="fixed top-0 left-0 w-full h-screen bg-cover bg-center bg-no-repeat"
         style={{
@@ -80,7 +80,7 @@ export default function Home() {
                 Bienvenidos a Nuestra Parroquia
               </h1>
               
-              {/* Subtítulo (cita bíblica) */}
+              {/* cita bíblica */}
               <p className="font-cormorant-b text-xl sm:text-2xl lg:text-2xl leading-relaxed opacity-0 animate-fade-in-up delay-300 drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)] duration-800">
                 "Vengan a mí todos los que están cansados y agobiados, y yo les daré descanso. Carguen con mi yugo y aprendan de mí, porque soy paciente y humilde de corazón, y encontrarán descanso para su alma."
               </p>
@@ -193,10 +193,10 @@ export default function Home() {
             </p>
           </div>
           
-          {/* Cards con imágenes usando ImageTextCard */}
+          {/* Cards con imágenes */}
           <div className="space-y-12">
             
-            {/* Bautismo - Imagen a la izquierda */}
+            {/* Bautismo */}
             <ImageTextCard
               image={bautismoImg}
               title="Bautismo"
@@ -206,7 +206,7 @@ export default function Home() {
               delay="200"
             />
             
-            {/* Primera Comunión - Imagen a la derecha */}
+            {/* Primera Comunión */}
             <ImageTextCard
               image={comunionImg}
               title="Primera Comunión"
@@ -216,7 +216,7 @@ export default function Home() {
               delay="400"
             />
             
-            {/* Confirmación - Imagen a la izquierda */}
+            {/* Confirmación */}
             <ImageTextCard
               image={confirmacionImg}
               title="Confirmación"
@@ -226,7 +226,7 @@ export default function Home() {
               delay="600"
             />
             
-            {/* Matrimonio - Imagen a la derecha */}
+            {/* Matrimonio */}
             <ImageTextCard
               image={matrimonioImg}
               title="Matrimonio"

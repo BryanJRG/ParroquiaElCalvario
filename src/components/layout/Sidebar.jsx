@@ -8,7 +8,6 @@ const Sidebar = ({ isOpen, setIsOpen, liturgicalColor }) => {
     { icon: Home, label: 'Inicio', href: '#inicio' },
     { icon: Phone, label: 'Contacto', href: '#contacto' },
     { icon: ScrollText, label: 'Sacramentos', href: '#sacramentos'},
-    { icon: BookOpenText, label: 'Historia', href: '#historia'},
     { icon: PiHandsPraying, label: 'Oraciones', href: '#oraciones'},
     { icon: MapPin, label: 'Ubicacion', href: '#comunidad' },
     { icon: HandCoins , label: 'Donar', href: '#contacto' },

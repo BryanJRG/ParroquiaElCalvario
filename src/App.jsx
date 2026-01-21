@@ -6,19 +6,20 @@ import Donations from './pages/Donations';
 import Sacraments from './pages/Sacraments';
 import Prayers from './pages/Prayers';
 import History from './pages/History';
+import ScrollToTop from "./hooks/ScrollToTop";
 import './App.css'
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contacto" element={<Contact />} />
-        <Route path='/donar' element={<Donations />}/>
-        <Route path='/oraciones' element={<Prayers />}/>
-        <Route path='/historia' element={<History />}/>
-        <Route path='/sacramentos' element={<Sacraments />} />
-      </Routes>
+      <ScrollToTop/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contacto" element={<Contact />} />
+          <Route path='/donar' element={<Donations />}/>
+          <Route path='/oraciones' element={<Prayers />}/>
+          <Route path='/sacramentos' element={<Sacraments />} />
+        </Routes>
     </Router>
   );
 }

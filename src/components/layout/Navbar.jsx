@@ -23,7 +23,6 @@ const Navbar = ({ isOpen, setIsOpen, liturgicalColor, noHero}) => {
     { label: 'Inicio', href: '/' },
     { label: 'Contacto', href: '/contacto' },
     { label: 'sacramentos', href: '/sacramentos'},
-    { label: 'historia', href: '/historia'},
     { label: 'oraciones', href: '/oraciones'},
     { label: 'Donar', href: '/donar' },
   ];
@@ -49,7 +48,7 @@ const Navbar = ({ isOpen, setIsOpen, liturgicalColor, noHero}) => {
               scrolled ? liturgicalColor : 'text-white'
             }`}
           >
-            Parroquia El Cristo Negro
+            Parroquia El Calvario
           </div>
           
           {/* Desktop Navigation con animaciones escalonadas */}

@@ -7,6 +7,7 @@ import CampanaTardeIZoom from '@/assets/images/gallery/CampanaTardeIZoom.jpg';
 import CruzAFuera from '@/assets/images/gallery/CruzAFuera.jpg';
 import CristoNegro from '@/assets/images/gallery/CristoNegroI.jpg';
 import Jesus from '@/assets/images/gallery/JesusCrucificadoGrande.jpg';
+import JardinL from '@/assets/images/gallery/JardinI.jpg';
 import useLiturgicalColor from '@/hooks/useLiturgicalColor';
 
 // Componente de Card de Sacramento
@@ -88,8 +89,7 @@ export default function Sacraments() {
         "Haber recibido el Bautismo y Primera Comunión",
         "Certificado de Bautismo",
         "Asistir al curso de preparación (duración aproximada de 1 año)",
-        "Elegir un padrino o madrina confirmado",
-        "Carta de motivación personal"
+        "Elegir un padrino o madrina confirmado"
       ],
       image: CristoNegro,
       objectClass: "object-[center_17%]"
@@ -129,6 +129,14 @@ export default function Sacraments() {
         "Entrevista con el párroco"
       ],
       image: CampanaTardeIZoom
+    },
+    {
+      title: "Unción de los enfermos",
+      description: "La Unción de los Enfermos es el sacramento mediante el cual la Iglesia encomienda al fiel gravemente enfermo o de edad avanzada al Señor sufriente y glorificado, para que lo alivie y lo salve. Concede fortaleza, paz y ánimo, así como el perdón de los pecados si el enfermo no pudo confesarse.",
+      requirements: [
+        "Contactar con el párroco"
+      ],
+      image: JardinL
     }
   ];
   
@@ -283,7 +291,7 @@ export default function Sacraments() {
                 Contactar Oficina
               </a>
               <a
-                href="/horarios"
+                href="/contacto"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white border-2 border-gray-300 text-gray-800 rounded-full font-cormorant-b text-lg transition-all duration-700 hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] hover:-translate-y-1 hover:border-gray-400"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

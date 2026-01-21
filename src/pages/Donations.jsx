@@ -106,7 +106,7 @@ export default function Donations() {
             
           </div>
           
-          {/* Columna derecha: Imagen - Desktop */}
+          {/* Image Right for desktop */}
           <div className="opacity-0 animate-fade-in-right delay-300 duration-800 lg:flex hidden">
             <div className="relative group overflow-hidden rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.12)] border border-gray-200/80 w-full h-95 min-h-[600px]">
               <img 
@@ -114,12 +114,11 @@ export default function Donations() {
                 alt="Virgen con Jesús" 
                 className="w-full h-full object-cover object-[center_5%] transition-transform duration-700 group-hover:scale-102"
               />
-              {/* Overlay sutil */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
           </div>
           
-          {/* Imagen para móvil - centrada y más pequeña */}
+          {/* Image for cellphone */}
           <div className="opacity-0 animate-fade-in-up delay-300 duration-800 lg:hidden flex justify-center">
             <div className="relative group overflow-hidden rounded-xl shadow-[0_8px_40px_rgba(0,0,0,0.12)] border border-gray-200/80 w-full max-w-md h-[400px]">
               <img 
@@ -233,7 +232,7 @@ export default function Donations() {
             
             <div className="text-center mb-10">
               <h2 className={`font-cinzel-b text-3xl sm:text-4xl mb-6 ${liturgicalColor} drop-shadow-sm`}>
-                Haga su Donación Ahora
+                Haga su Donación Aquí
               </h2>
               <div className="flex items-center justify-center mb-6">
                 <div className="h-[2px] w-20 bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
@@ -294,11 +293,11 @@ export default function Donations() {
       {/* Sección de Agradecimiento */}
       <section className="relative bg-white py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 items-start">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             
             {/* Texto de agradecimiento - Izquierda */}
-            <div className="opacity-0 animate-fade-in-up delay-200 duration-800 order-2 md:order-1">
-              <div className="bg-gradient-to-br from-gray-50 to-white p-10 md:p-12 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-gray-200/80">
+            <div className="opacity-0 animate-fade-in-up delay-200 duration-800 order-2 md:order-1 flex items-center">
+              <div className="bg-gradient-to-br from-gray-50 to-white p-10 md:p-12 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-gray-200/80 w-full">
                 <h3 className={`font-cinzel-b text-2xl sm:text-3xl mb-6 ${liturgicalColor} drop-shadow-sm`}>
                   Gracias por su Generosidad
                 </h3>
@@ -313,12 +312,12 @@ export default function Donations() {
             </div>
 
             {/* Imagen San Judas - Derecha */}
-            <div className="opacity-0 animate-fade-in-up delay-300 duration-800 order-1 md:order-2 flex md:items-end items-center justify-center md:pt-8">
+            <div className="opacity-0 animate-fade-in-up delay-300 duration-800 order-1 md:order-2 flex items-center justify-center">
               <div className="relative group overflow-hidden rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-gray-200/80 w-full max-w-md">
                 <img 
                   src={SanJudas} 
                   alt="San Judas Tadeo" 
-                  className="w-full h-[560px] md:h-[560px] object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-[560px] object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
             </div>
