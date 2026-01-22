@@ -14,19 +14,19 @@ import useLiturgicalColor from '@/hooks/useLiturgicalColor';
 const InfoCard = ({ icon, title, content, delay = '0', liturgicalColor }) => {
   return (
     <div 
-      className={`group bg-gradient-to-br from-white to-gray-50/50 p-4 sm:p-6 md:p-8 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-gray-200/80 transition-all duration-700 ease-out hover:-translate-y-3 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:from-gray-50/50 hover:to-white opacity-0 animate-fade-scale-up`}
+      className={`group bg-gradient-to-br from-white to-gray-50/50 p-3 sm:p-5 md:p-7 rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-gray-200/80 transition-all duration-700 ease-out hover:-translate-y-3 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:from-gray-50/50 hover:to-white opacity-0 animate-fade-scale-up`}
       style={{ animationDelay: `${delay}ms` }}
     >
-      <div className="flex items-start gap-3 sm:gap-4">
-        <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center ${liturgicalColor} transition-transform duration-500 ease-out group-hover:scale-110 shadow-md`}>
+      <div className="flex items-start gap-2.5 sm:gap-4">
+        <div className={`flex-shrink-0 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center ${liturgicalColor} transition-transform duration-500 ease-out group-hover:scale-110 shadow-md`}>
           {icon}
         </div>
         <div className="flex-1 min-w-0">
-          <h3 className={`font-bold text-lg sm:text-xl mb-2 sm:mb-3 ${liturgicalColor} drop-shadow-sm transition-all duration-500 ease-out break-words`}>
+          <h3 className={`font-bold text-base sm:text-lg md:text-xl mb-1.5 sm:mb-2.5 ${liturgicalColor} drop-shadow-sm transition-all duration-500 ease-out break-words leading-tight`}>
             {title}
           </h3>
-          <div className="w-full h-[2px] bg-gradient-to-r from-gray-400 to-gray-300 mb-3 sm:mb-4 shadow-sm transition-all duration-500 ease-out"></div>
-          <div className="font-normal text-sm sm:text-base text-gray-700 leading-relaxed transition-all duration-500 ease-out group-hover:scale-[1.01] origin-top-left break-words">
+          <div className="w-full h-[1.5px] bg-gradient-to-r from-gray-400 to-gray-300 mb-2 sm:mb-3 shadow-sm transition-all duration-500 ease-out"></div>
+          <div className="font-normal text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed transition-all duration-500 ease-out group-hover:scale-[1.01] origin-top-left break-words">
             {content}
           </div>
         </div>
