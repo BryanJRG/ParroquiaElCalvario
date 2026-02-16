@@ -39,7 +39,7 @@ const useLiturgicalColor = () => {
     };
     
     const season = getLiturgicalSeason();
-    setColorClass(colors.gold);//colors[season]
+    setColorClass(colors[season]);//colors[season]
   }, []);
   
   return colorClass;
