@@ -243,7 +243,7 @@ export default function Donations() {
                 Será redirigido a nuestra plataforma segura de pagos <strong className="font-lora-b">WOMPI</strong> para completar su donación de manera rápida y segura.
               </p>
               <p className="font-lora-m text-base text-gray-600 italic">
-                Todos los donativos son destinados directamente a nuestra parroquia a pesar de ser de aparecer que es para la <strong>Parroquia Santa Lucía</strong>.
+                Todos los donativos son destinados directamente a nuestra parroquia a pesar de aparecer que es para la <strong>Parroquia Santa Lucía</strong>.
               </p>
             </div>
             
